@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> VIDEOS SLIDERS </title>
+    <link rel="stylesheet" href="css/video1.css">
+
+    <!--FONT AWESOME LINK MY KIT -->
+    <script src="https://kit.fontawesome.com/b658593d70.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--
+    <header class="video1-header">
+      <a href="#" class="brand">Travel</a>
+       <div class="menu-btn"></div>
+    
+<div class="navigation">
+          <div class="navigation-items">
+          <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Explorer</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </div>
+  </header>
+-->
+
+  <section class="home-section">
+         
+        <!--videos for the slides -->  
+    <video class="video-slide active" src="videos/1kiandasea22.mp4" autoplay muted loop></video>
+   
+    <video class="video-slide" src="videos/3Beach Waves And Sunset.mp4" autoplay muted loop></video>
+
+    <video class="video-slide" src="videos/4sunset.mp4" autoplay muted loop></video>
+
+    <video class="video-slide" src="videos/4notebbokDorian  and kianda.mp4" autoplay muted loop></video>
+
+    <video class="video-slide" src="videos/kiss.mp4" autoplay muted loop></video>
+           <!--videos for the slides -->
+
+<!--CONTENT OR EACH PAGE SLIDE WITH THE VIDEO-->>
+<div class="content active">
+        <h1><strong class="boldP">KIANDA'S.</strong><br><span>WORLD</span></h1>
+        <p>I know how bad you need the Sea right now, but because of your schedule i know time is not on your side,so i decided to bring it to you ,so in this way it will be just one click away,i know is not the same but is all i can do right now, i promise i will take you to the sea when u here.</p>
+        <a href="#">Press the little buttons underneath</a>
+</div>
+
+<div class="content">
+    <h1><strong class="boldP">To the MOst Beautiful Woman.</strong> <br><span>I Know </span></h1>
+    <p>I feel fortunate and blessed and grateful to God for bringing YOU into my life ,our life's(SHAYUNI,NAYARI,HEAVENS,ARIELLA AND JANIO Jr). i know im not an easy man to deal with, so i Thank You for your patience and for your love,i just hope trough the years i can be worth of such love as yours. I LOVE YOU MORE THAN YOU CAN IMAGINE.  </p>
+    <a href="#">Read all the texts please</a>
+</div>
+
+<div class="content">
+    <h1><strong class="boldP"> Your Journey is...</strong> <br><span>Inspirational</span></h1>
+    <p>Your Journey is the most amazing story of accomplishements,you overcame so much,life threw so much on you but u still came out GOOD, KIND, HUMBLE, CARING,AND BEAUTIFUL,you succeed where a lot peole failed and lost themselves, but still you blossomed to this beautiful flower wonderfully known as KIANDA,iam humbled and honored that you chose someone like me, to be part of such epic tale...KIANDA YOU TRULY ARE GOD'S REAL CREATION</p>
+</div>
+
+<div class="content">
+    <h1><strong class="boldP">Beautiful.</strong> <br><span>Just Beautiful</span></h1>
+    <p>IF YOU LOOK IN THE RIGHT HAND CORNER YOU WILL SEE ICONS,THOSE ICONS REPRESENT WHO WE ARE ,THE VALUES AND PRINCIPLES
+        OF THE KELLY PRIMO CLAN.</p>
+    <a href="#">love u after 54 years</a>
+</div>
+
+<div class="content">
+    <h1><strong class="boldP">You are my</strong> <br><span>NOTEBOOK</span></h1>
+    </div>
+
+
+<div class="media-icons">
+<a href="#"><i class="fas fa-pray"></i>
+</i></a>
+<a href="#"><i class="fas fa-tree"></i></a>
+<a href="#"><i class="fas fa-home"></i></a>
+<a href="#"><i class="fas fa-heart"></i></a>
+<a href="#"><i class="fas fa-baby"></i></a>
+</div>
+
+
+<div class="slider-navigation">
+<div class="nav-btn active"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+</div>
+
+</section> 
+
+
+
+
+
+ <script type="text/javascript">
+     //javascript for video slider navigation
+ const btns = document.querySelectorAll(".nav-btn");
+ const slides = document.querySelectorAll(".video-slide");
+ const contents = document.querySelectorAll(".content");
+
+
+ var sliderNav =function(manual){
+     btns.forEach((btn) => {
+         btn.classList.remove("active");
+     });
+
+     slides.forEach((slide) => {
+     slide.classList.remove("active");
+     });
+
+     contents.forEach((content) => {
+         content.classList.remove("active");
+     });
+
+
+ btns[manual].classList.add("active");
+ slides[manual].classList.add("active");
+ contents[manual].classList.add("active");
+ }
+
+
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            sliderNav(i);
+        });
+    });
+
+</script> 
+
+</body>
+</html>
